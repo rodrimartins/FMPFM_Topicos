@@ -9,6 +9,8 @@
     <meta name="author" content="Rodrigo Martins">
     <meta name="keywords" content="ford, fiat, gm, hyndai">
     <title>Revisão de HTML 5 e Css 3</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -50,7 +52,8 @@
 
                 <p>
                     <label for="nome">Nome:</label>
-                    <input type="text" name="txtNome" id="nome" size="60" placeholder="Digite seu nome">
+                    <input type="text" name="txtNome" id="nome" size="60" 
+                    autofocus required placeholder="Digite seu nome">
                 </p>
 
                 <p>
@@ -75,9 +78,71 @@
 
                 <p>
                     <label for="nota">Número:</label>
-                    <input type="number" name="txtNota" id="nota" 
-                    min="0" max="10" step="0.5">
+                    <input type="number" name="txtNota" id="nota" min="0" max="10" step="0.5">
                 </p>
+
+                <p>
+                    <label for="arquivo">Arquivo:</label>
+                    <input type="file" name="txtArquivo" id="arquivo">
+                </p>
+
+                <fieldset>
+                    <legend>Estado Civil</legend>
+                    <p>
+                        <label for="casado">Casado</label>
+                        <input type="radio" name="estadoCivil" id="casado" value="casado">
+                    </p>
+
+                    <p>
+                        <label for="solteiro">Solteiro</label>
+                        <input type="radio" name="estadoCivil" id="solteiro" value="solteiro">
+                    </p>
+
+                    <p>
+                        <label for="divorciado">Divorciado</label>
+                        <input type="radio" name="estadoCivil" id="divorciado" value="divorciado">
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Séries Favoritas</legend>
+
+                    <p>
+                        <label for="serie1">GOT</label>
+                        <input type="checkbox" name="series" id="serie1" value="got">
+                    </p>
+
+                    <p>
+                        <label for="serie2">La casa de Papel</label>
+                        <input type="checkbox" name="series" id="serie2" value="lacasa">
+                    </p>
+
+                    <p>
+                        <label for="serie3">SuperNatural</label>
+                        <input type="checkbox" name="series" id="series3" value="SuperNatural">
+                    </p>
+
+                    <p>
+                        <label for="resumo">Digite seu Resumo:</label> <br>
+                        <textarea name="txtTexto" id="resumo" cols="30" rows="10"></textarea>
+                    </p>
+
+                    <p>
+                        <label for="estado">Selecione seu Estado:</label>
+                        <select  name="txtUf" id="uf">
+                            <option value="">Selecione</option>
+                            <option value="sp">SP</option>
+                            <option value="rj">RJ</option>
+                            <option value="mg">MG</option>
+                            <option value="es">ES</option>
+                            <option value="pi">PI</option>
+                        </select>
+
+                    </p>
+
+                </fieldset>
+
 
                 <p>
                     <label for="data">Data:</label>
@@ -85,18 +150,8 @@
                 </p>
 
 
-
-
-
-
                 <button type="submit">ENVIAR</button>
                 <button type="reset">LIMPAR</button>
-
-
-
-
-
-
 
             </form>
             <section>
