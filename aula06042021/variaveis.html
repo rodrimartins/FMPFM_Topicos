@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com variáveis</title>
+</head>
+<body>
+
+    <script>
+       
+
+       function exemplo(){
+           //escopo local
+            console.log(x);
+            for (var x = 0; x < 5; x++){
+                console.log(x);
+            }
+
+            console.log(" ");
+            console.log(x);
+        }
+
+        function exemplo2(){
+            //console.log(x);
+            //escopo de bloco
+            for (let x = 0; x < 5; x++){
+                console.log(x);
+            }
+
+            //console.log(x);
+        }
+
+        exemplo();
+        console.log(" ");
+        exemplo2();
+
+    </script>
+
+    
+</body>
+</html
