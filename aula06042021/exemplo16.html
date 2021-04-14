@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 16</title>
+  </head>
+  <body>
+    <h1>Aula de JavaScript</h1>
+    <h2>Arrays</h2>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script>
+      var carros = ["Gol", "Parati", "Passat", "Santana"];
+
+      document.getElementById("demo1").innerHTML = carros;
+
+      var carros2 = [
+        "Jetta", 
+        "HRV", 
+        "CRV"
+      ];
+
+      document.getElementById("demo2").innerHTML = carros2;
+      document.getElementById("demo3").innerHTML = carros[3];
+      document.getElementById("demo4").innerHTML = carros2[0];
+      document.getElementById("demo5").innerHTML = carros2[1];
+    </script>
+  </body>
+</html>

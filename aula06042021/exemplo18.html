@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 17</title>
+  </head>
+  <body>
+    <h1>Aula de JavaScript</h1>
+    <h2>Pop, push, shift, Unshift, sort, reverse</h2>
+
+    <h2>pop()</h2>
+
+    <p>O método pop() remove o último elemento do array</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <h2>shift()</h2>
+    <p>O método shift() remove o primeiro elemento do array</p>
+
+    <h2>push()</h2>
+    <p>O método push() adiciona um elemento no array</p>
+
+    <button type="button" onclick="adiciona()">PUSH</button>
+
+    <h2>Unshift</h2>
+    <p>O método unshift adiciona no inicio um novo elemento no array</p>
+    <button type="button" onclick="adicionaInicio()">UNSHIFT</button>
+
+    <p id="demo4"></p>
+
+    <h2>sort() e reverse()</h2>
+    <p>O método sort() ordena um array</p>
+    <p>O método reverse() classifica de maneira decrescente um array</p>
+
+    <button type="button" onclick="ordena()">SORT</button>
+    <button type="button" onclick="decrescente()">REVERSE</button>
+
+    <script>
+      var frutas = ["Banana", "Laranja", "Maça", "Manga"];
+
+      document.getElementById("demo1").innerHTML = frutas;
+      frutas.pop();
+
+      document.getElementById("demo2").innerHTML = frutas;
+
+      frutas.shift();
+      document.getElementById("demo3").innerHTML = frutas;
+
+      function adiciona() {
+        frutas.push("Kiwi");
+        document.getElementById("demo3").innerHTML = frutas;
+      }
+
+      function adicionaInicio() {
+        frutas.unshift("Abacaxi");
+        document.getElementById("demo3").innerHTML = frutas;
+      }
+
+      function ordena() {
+        frutas.sort();
+        document.getElementById("demo3").innerHTML = frutas;
+      }
+
+      function decrescente() {
+        frutas.reverse();
+        document.getElementById("demo3").innerHTML = frutas;
+      }
+    </script>
+  </body>
+</html>

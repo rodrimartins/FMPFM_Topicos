@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 17</title>
+  </head>
+  <body>
+    <h1>Aula de JavaScript</h1>
+    <h2>Arrays x Objetos</h2>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+      var pessoa = ["Rodrigo", "Martins", 41];
+
+      document.getElementById("demo1").innerHTML = pessoa[0];
+
+      var pessoa2 = {
+        primeiroNome: "Rodrigo", 
+        sobreNome: "Martins",
+        idade: 41
+      }
+
+      document.getElementById("demo2").innerHTML = pessoa2["idade"];
+
+      document.getElementById("demo3").innerHTML = pessoa.length;
+
+      var frutas, texto, qtd, i;
+      
+      frutas = ["Maça", "Manga", "Morango", "Abacaxi", "Laranja"];
+      qtd = frutas.length;
+
+      texto = "<ul>";
+
+      for (i = 0; i < qtd; i++){
+        texto += "<li>" + frutas[i] + "</li>"
+      }
+
+      texto += "</ul>";
+
+      document.getElementById("demo4").innerHTML = texto;
+  
+    </script>
+  </body>
+</html>
