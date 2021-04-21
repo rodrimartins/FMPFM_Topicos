@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 9</title>
+  </head>
+  <body>
+    <h1>Exemplo 9</h1>
+
+    <p>Localizando elemento HTML por coleções de Objetos HTML </p>
+    <p>Tem que ter o DOM</p>
+   
+    <form id="frm1">
+      <p>Nome: <input type="text" name="nome" id="nome"></p>
+      <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+      <p>Idade: <input type="text" name="idade" id="idade"></p>
+      <p>Cidade: <input type="text" name="cidade" id="cidade"></p>
+    </form>
+
+    <p>Clique em "Experimente" para exibir o valor de cada elemento no formulário</p>
+
+    <button type="button" onclick="experimente()">EXPERIMENTE</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function experimente(){
+
+        var x = document.forms["frm1"];
+        var text = "";
+
+        for (var i =0; i < x.length;  i++){
+          text += x.elements[i].value+ " ";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+
+      }
+
+
+    </script>
+  </body>
+</html>

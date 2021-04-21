@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 6</title>
+  </head>
+  <body>
+    <h1>Exemplo 6</h1>
+
+    <p>Localizando elemento HTML pelo nome da TAG</p>
+    <p>Tem que ter o DOM</p>
+    <p>Aula de TAC-I</p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+      
+      var x = document.getElementsByTagName("p");
+
+      document.getElementById("demo").innerHTML = 
+      "O texto do 1º parágrafo (índice[0]) é: " +  x[0].innerHTML;
+
+      x = document.getElementsByTagName("p");
+      document.getElementById("demo1").innerHTML = 
+      "O texto do 2º parágrafo (índice[1]) é: " +  x[1].innerHTML;
+
+      x = document.getElementsByTagName("p");
+
+      document.getElementById("demo2").innerHTML = 
+      "O texto do 3º parágrafo (índice[2]) é: " +  x[2].innerHTML;
+      
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 8</title>
+  </head>
+  <body>
+    <h1>Exemplo 8</h1>
+
+    <p>Localizando elemento HTML por seletores CSS - 
+      querySelector e querySelectorAll </p>
+    <p>Tem que ter o DOM</p>
+   
+    <h2 class="teste"> h2 class="teste"</h2>
+    <p class="teste">Parágrafo class="teste"</p>
+    <h3 class="teste">h3 class="teste"</h3>
+
+    <button type="button" onclick="altera()">querySelector</button>
+    <button type="button" onclick="alteraTudo()">querySelectorAll</button>
+
+    <script>
+
+      function altera(){
+        document.querySelector(".teste").style.backgroundColor = "blue";
+      }
+
+      function alteraTudo(){
+
+        var x = document.querySelectorAll(".teste");
+        for (var i = 0; i < x.length; i++){
+          x[i].style.backgroundColor = "yellow";
+        }
+
+      }
+      
+
+
+
+    </script>
+  </body>
+</html>
