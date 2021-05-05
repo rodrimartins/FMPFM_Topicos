@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 22</title>
+  </head>
+  <body>
+    <h1>Exemplos addEventListener</h1>
+
+    <button id="btn1" type="button">SOMAR/MULTIPLICAR</button>
+
+    <p id="demo"></p>
+
+    <script>
+      var n1 = 10;
+      var n2 = 20;
+
+      document.getElementById("btn1").addEventListener("click", function () {
+        somar(n1, n2);
+      });
+
+      document.getElementById("btn1").addEventListener("mouseover", function () {
+        multiplicar(n1, n2);
+      });
+
+      function somar(x, y) {
+        var total = x + y;
+
+        document.getElementById("demo").innerHTML +=
+          "A soma é: " + total + "<br>";
+      }
+
+      function multiplicar(x, y) {
+        var total = x * y;
+
+        document.getElementById("demo").innerHTML +=
+          "A multiplicação é: " + total + "<br>";
+      }
+    </script>
+  </body>
+</html>

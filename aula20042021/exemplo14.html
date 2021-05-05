@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 14</title>
+  </head>
+  <body>
+    <h1>DOM - Evento onmousedown() e onmouseup()</h1>
+
+    <div
+      onmousedown="mDown(this)"
+      onmouseup="mUp(this)"
+      style="background-color:burlywood; width: 120px; height: 40px; padding: 40px;"
+      CLIQUE AQUI
+    ></div>
+
+    <script>
+      function mDown(obj) {
+        obj.style.backgroundColor = "blue";
+        obj.innerHTML = "SOLTA AGORA";
+      }
+
+      function mUp(obj) {
+        obj.style.backgroundColor = "green";
+        obj.innerHTML = "CLIQUE AQUI";
+      }
+    </script>
+  </body>
+</html>
